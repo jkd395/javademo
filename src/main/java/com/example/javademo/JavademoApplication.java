@@ -15,14 +15,14 @@ public class JavademoApplication {
 
 
 	@Value("${test.env}")
-	private String env
+	private String env;
 	@Value("${test.db}")
-	private String db
+	private String db;
 
 	@RequestMapping("/hello")
 	@ResponseBody
 	String demo(){
-		return "env:" + env + " /hello, db:" + db
+		return "env:" + env + " /hello, db:" + db;
 	}
 
 	public static void main(String[] args) {
