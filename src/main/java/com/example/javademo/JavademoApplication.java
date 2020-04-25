@@ -22,7 +22,7 @@ public class JavademoApplication {
 	@RequestMapping("/hello")
 	@ResponseBody
 	String demo(){
-		return "env:" + env + " /hello, db:" + db;
+		return "env:" + env + " /hello, db:" + db
 	}
 
 	public static void main(String[] args) {
